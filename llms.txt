@@ -1,0 +1,49 @@
+# HITECH Motorcycle
+
+> Motorcycle service, performance, maintenance and repair shop in Miramar, South Florida.
+> Serving Honda, Yamaha, Kawasaki, Suzuki, Harley-Davidson, Ducati, Aprilia, BMW Motorrad and MV Agusta.
+
+## Contact
+- Address: 3056 S State Road 7, Miramar, FL 33023
+- Phone / Text / WhatsApp: 954.793.6390 (https://wa.me/19547936390)
+- Instagram: https://www.instagram.com/hi_tech_motorcycles
+- YouTube: https://www.youtube.com/@imaginesunset
+- Service area: Miramar, Hollywood, Pembroke Pines, Fort Lauderdale, Miami, Broward County, South Florida.
+- Hours: Mon-Sat 9:00-18:00.
+
+## What we do
+- Repairs: no-start diagnosis, electrical faults, brakes, recall-related issues.
+- Performance: tuning, ECU mapping, top-end work, track and street builds.
+- Maintenance: fluids, chains, tires, valve service, scheduled intervals.
+- All machine types: Japanese sport bikes, European performance, Harley touring, custom builds.
+
+## The Tech's Ledger (verified, recall-backed issues)
+Each page covers one model and one documented issue: the symptom, the root cause, the diagnostic
+steps, the official fix (recall or bulletin ID), and how to reach the shop. Index: https://www.hitechmotorcycle.com/ledger/index.html
+
+- [Honda CBR1000RR Stalls or Won’t Restart – Fuel Pump Recall Fix](https://www.hitechmotorcycle.com/ledger/honda-cbr1000rr-stalls-fuel-pump.html): A tech-style breakdown of the Honda CBR1000RR fuel pump impeller recall, including the symptom, root cause, and official repair path.
+- [Honda CBR600RR Engine Stall – Fuel Pump Recall Cause and Fix](https://www.hitechmotorcycle.com/ledger/honda-cbr600rr-stalls-fuel-pump.html): Why some Honda CBR600RR models stall unexpectedly, and how the official fuel-pump recall repair addresses the defect.
+- [Yamaha R1 Hard Shifting or Lockup – Transmission Recall Explained](https://www.hitechmotorcycle.com/ledger/yamaha-r1-hard-shifting-transmission-recall.html): A clear breakdown of the 2015 Yamaha R1 transmission recall, including the failure mode and official repair.
+- [Yamaha R1 Headlight Failure – Connector Overheating Recall Fix](https://www.hitechmotorcycle.com/ledger/yamaha-r1-headlight-terminal-overheating.html): Why certain Yamaha R1 headlights fail, what the overheating connector looks like, and the official repair path.
+- [Yamaha R6 Wheel Looseness or Air Loss – Recall Cause and Fix](https://www.hitechmotorcycle.com/ledger/yamaha-r6-wheel-hardness-recall.html): A tech’s breakdown of the Yamaha R6 wheel hardness recall and why wheel replacement is the official remedy.
+- [Yamaha R6 Shifting Problem – Shift Shaft Recall Explained](https://www.hitechmotorcycle.com/ledger/yamaha-r6-shift-shaft-recall.html): How the Yamaha R6 shift-shaft recall causes shifting trouble and what the official repair requires.
+- [Kawasaki ZX-10R Oil Light or Stall – Relief Valve Recall Fix](https://www.hitechmotorcycle.com/ledger/kawasaki-zx10r-oil-pressure-relief-valve-recall.html): A workshop-style guide to the Kawasaki ZX-10R oil-pressure relief-valve recall and the official repair.
+- [Kawasaki ZX-4R / ZX-4RR Stalling – Spark Plug Recall Cause and Fix](https://www.hitechmotorcycle.com/ledger/kawasaki-zx4r-stall-spark-plug-recall.html): A technician-style explanation of the ZX-4R and ZX-4RR spark-plug recall, including symptoms and official repair.
+- [Suzuki GSX-R Spongy Front Brake – Master Cylinder Recall Fix](https://www.hitechmotorcycle.com/ledger/suzuki-gsxr-spongy-front-brake-master-cylinder.html): Why some Suzuki GSX-R front brakes go spongy and how the official master-cylinder recall repair solves it.
+- [Suzuki GSX-R1000 Fuel Leak – O-Ring Recall Cause and Fix](https://www.hitechmotorcycle.com/ledger/suzuki-gsxr1000-fuel-leak-o-ring-recall.html): A clean breakdown of the GSX-R1000 fuel-pump O-ring recall and the official repair path.
+- [Suzuki GSX-R1000 Frame Crack Concern – Inspection and Recall Fix](https://www.hitechmotorcycle.com/ledger/suzuki-gsxr1000-frame-crack-reinforcement.html): What the GSX-R1000 frame-reinforcement recall covers, where to inspect, and when Suzuki requires frame replacement.
+- [Harley Touring Electrical Power Loss – Regulator Wire Recall Fix](https://www.hitechmotorcycle.com/ledger/harley-touring-electrical-power-loss-regulator-wire.html): Why some 2024 Harley center-cooled touring bikes can lose all electrical power and how the recall repair addresses it.
+- [Harley Softail Rear Shock Adjuster Hitting Tire – Recall Fix](https://www.hitechmotorcycle.com/ledger/harley-softail-shock-adjuster-tire-contact.html): A straightforward guide to the Harley Softail shock-adjuster recall, including the symptom, cause, and official hardware update.
+- [Harley Touring or Trike Brake Light Problem – Recall Fix](https://www.hitechmotorcycle.com/ledger/harley-touring-brake-light-activation-recall.html): What causes the Harley Touring/Trike brake-light recall and how the official software and switch updates solve it.
+- [Harley Sportster S Steering Recall – Upper Triple Clamp Fix](https://www.hitechmotorcycle.com/ledger/harley-sportster-s-upper-triple-clamp-recall.html): A clean technician’s explanation of the Sportster S upper triple-clamp recall and its official repair.
+- [Ducati Panigale / Streetfighter V4 Rear Wheel Shaft Recall](https://www.hitechmotorcycle.com/ledger/ducati-panigale-v4-rear-wheel-shaft-recall.html): Why Ducati recalled certain Panigale and Streetfighter V4 models for the rear wheel shaft, and what the official repair does.
+- [Ducati Monster Rear Brake Pressure Loss – Hose Recall Fix](https://www.hitechmotorcycle.com/ledger/ducati-monster-rear-brake-hose-recall.html): A real-world guide to the Ducati Monster rear-brake hose recall, including why pressure is lost and how Ducati fixes it.
+- [Ducati Multistrada V4 Engine Recall – Valve Guide Failure Risk](https://www.hitechmotorcycle.com/ledger/ducati-multistrada-v4-engine-recall.html): A simple explanation of the Ducati Multistrada V4 valve-guide recall and why Ducati replaces the engine.
+- [Aprilia RSV4 Engine Replacement Recall – Why It Happened](https://www.hitechmotorcycle.com/ledger/aprilia-rsv4-engine-replacement-recall.html): A focused explanation of the Aprilia RSV4 engine-replacement recall and the defect behind it.
+- [Aprilia RS 660 / Tuono 660 Engine Recall – Connecting Rod Failure Risk](https://www.hitechmotorcycle.com/ledger/aprilia-rs660-tuono660-engine-recall.html): Why Aprilia recalled the RS 660 and Tuono 660 for a connecting-rod defect, and what the official repair involves.
+- [Aprilia RSV4 / Tuono Rear Light Flicker – Recall Cause and Fix](https://www.hitechmotorcycle.com/ledger/aprilia-rsv4-tuono-rear-light-flicker-recall.html): A simple guide to the Aprilia RSV4 and Tuono rear-light recall, including the root cause and official repair.
+- [MV Agusta F3 / Brutale Front Axle Carrier Recall – Cause and Fix](https://www.hitechmotorcycle.com/ledger/mv-agusta-f3-front-axle-carrier-recall.html): Why MV Agusta recalled certain F3 and Brutale models for the fork axle carrier, and what the official repair involves.
+
+## How to engage HITECH
+Text or WhatsApp 954.793.6390 with year, make, model, mileage, the exact symptom, when it happens,
+recent work, and a short video if sound or a dash warning matters.

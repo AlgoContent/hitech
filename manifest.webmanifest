@@ -1,0 +1,12 @@
+{
+  "name": "HITECH Motorcycle",
+  "short_name": "HITECH",
+  "description": "Motorcycle service, performance and repair in Miramar, South Florida.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "icons": [
+    { "src": "assets/images/name.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
