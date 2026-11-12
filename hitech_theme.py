@@ -89,19 +89,7 @@ fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
 
 JS = """<script>
 function toggleMsg(btn){var w=btn.closest('.msg');if(w)w.classList.toggle('open');}
-function subForm(e){e.preventDefault();var f=e.target;
-if(f._company && f._company.value){return false;}            /* honeypot: bots fill this, humans never see it */
-var ok=f.querySelector('.sub-ok'),btn=f.querySelector('button[type=submit]');
-var data={name:(f.name.value||''),email:(f.email.value||''),bike:(f.bike.value||''),
-message:(f.message?f.message.value:''),source:location.hostname,page:location.pathname,form:'hitech-website'};
-if(btn){btn.disabled=true;btn.dataset.t=btn.textContent;btn.textContent='Sending...';}
-fetch('__SUBMIT_URL__',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-.then(function(r){if(!r.ok)throw r.status;return r.text();})
-.then(function(){f.reset();if(ok){ok.textContent='Thanks \\u2014 we got it. We will be in touch.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}})
-.catch(function(){if(ok){ok.textContent='Could not send \\u2014 text us at %(phone)s.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}});
-return false;}
+(function(){var t0=Date.now();function bc(){document.querySelectorAll('form.bc-form').forEach(function(f){f.addEventListener('submit',function(e){var ok=f.querySelector('.sub-ok'),trap=f.querySelector('input[name="website"]'),em=f.querySelector('input[name="email"]');if((trap&&trap.value.trim()!=='')||Date.now()-t0<2500){e.preventDefault();if(ok){ok.textContent='Submission blocked. Please try again.';ok.style.display='block';}return;}if(em&&!em.checkValidity()){e.preventDefault();em.reportValidity();return;}if(ok){ok.textContent='Submitting...';ok.style.display='block';}});});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',bc);}else{bc();}})();
 var VRthumbs=document.querySelectorAll('.vthumb');var vIdx=0,vAuto=true;
 function vLoad(id,play,label){var m=document.getElementById('vrotorMain');if(!m)return;
 if(play){m.innerHTML='<button type="button" class="ytwrap ytcard" data-id="'+id+'"></button>';ytPlay(m.firstChild);return;}
@@ -161,17 +149,21 @@ def mobile_bar():
             '<a class="mbar-text" href="sms:%s">&#128172; Text</a>'
             '<a class="mbar-wa" href="%s">WhatsApp</a></div>') % (TEL, TEL, WA)
 
-def subscribe_form(title="Get the next Issue", btn="Subscribe", msg=True):
+def subscribe_form(title="Join Bike Culture", btn="Send", msg=True):
     m = '<textarea name="message" rows="2" placeholder="What is going on with your bike? (optional)"></textarea>' if msg else ''
     return ('<div class="card subcard"><h4>%s</h4>'
-            '<form onsubmit="return subForm(event)">'
-            '<input type="text" name="_company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
+            '<form action="%s" method="POST" class="bc-form" novalidate>'
             '<input name="name" placeholder="Your name" autocomplete="name">'
             '<input name="email" type="email" placeholder="Email" autocomplete="email" required>'
             '<input name="bike" placeholder="Your bike (year / make / model)">'
             '%s'
+            '<input type="hidden" name="source" value="HITECH website">'
+            '<input type="hidden" name="tag" value="HITECH website">'
+            '<input type="hidden" name="form_name" value="Join Bike Culture">'
+            '<input type="hidden" name="_subject" value="New Subscriber - HITECH">'
+            '<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
             '<button class="button button-red" type="submit">%s</button>'
-            '<span class="sub-ok"></span></form></div>') % (title, m, btn)
+            '<span class="sub-ok"></span></form></div>') % (title, SUBMIT_URL, m, btn)
 
 def CSS():
     return """

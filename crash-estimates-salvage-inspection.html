@@ -300,7 +300,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 </div>
 <aside class="rail"><div class="card rev"><h4>Google Reviews</h4><div class="rev-score"><span class="rev-num">4.9</span><span class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rev-count">97 reviews</span></div><div class="rev-rot"><div class="rev-card on">Independent Ducati, Harley &amp; sport-bike specialists.</div><div class="rev-card">In-house dyno tuning and ECU work.</div><div class="rev-card">Straight diagnosis, no guesswork, no parts cannon.</div><div class="rev-card">Trusted across Broward &amp; Miami-Dade.</div><div class="rev-card">Factory-level repairs without dealership rates.</div></div><a class="button button-dark" style="width:100%" href="https://www.google.com/maps/search/?api=1&query=Hi+Tech+Motorsports+3056+S+State+Rd+7+Miramar+FL+33023" target="_blank" rel="noopener">Read them on Google</a></div>
 <div class="card"><h4>Talk to the mechanic</h4><p style="margin:0 0 10px">Year, make, model, mileage, and what you need. A clip beats a paragraph.</p><span class="msg"><button type="button" class="button button-red msg-toggle" onclick="toggleMsg(this)">Message the Mechanic</button><span class="msg-actions"><a class="button button-red" href="https://wa.me/19547936390">WhatsApp</a><a class="button button-dark" href="sms:+19547936390">Text</a><a class="button button-ghost" href="tel:+19547936390">Call</a></span></span></div>
-<div class="card subcard"><h4>Get shop updates</h4><form onsubmit="return subForm(event)"><input type="text" name="_company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><input name="name" placeholder="Your name" autocomplete="name"><input name="email" type="email" placeholder="Email" autocomplete="email" required><input name="bike" placeholder="Your bike (year / make / model)"><textarea name="message" rows="2" placeholder="What is going on with your bike? (optional)"></textarea><button class="button button-red" type="submit">Send</button><span class="sub-ok"></span></form></div></aside>
+<div class="card subcard"><h4>Join Bike Culture</h4><form action="https://submit-zuirpy7nza-uc.a.run.app" method="POST" class="bc-form" novalidate><input name="name" placeholder="Your name" autocomplete="name"><input name="email" type="email" placeholder="Email" autocomplete="email" required><input name="bike" placeholder="Your bike (year / make / model)"><textarea name="message" rows="2" placeholder="What is going on with your bike? (optional)"></textarea><input type="hidden" name="source" value="HITECH website"><input type="hidden" name="tag" value="HITECH website"><input type="hidden" name="form_name" value="Join Bike Culture"><input type="hidden" name="_subject" value="New Subscriber - HITECH"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="button button-red" type="submit">Send</button><span class="sub-ok"></span></form></div></aside>
 </div>
 </main>
 <footer class="footer">
@@ -312,19 +312,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 <div class="mbar"><a class="mbar-call" href="tel:+19547936390">&#128222; Call</a><a class="mbar-text" href="sms:+19547936390">&#128172; Text</a><a class="mbar-wa" href="https://wa.me/19547936390">WhatsApp</a></div>
 <script>
 function toggleMsg(btn){var w=btn.closest('.msg');if(w)w.classList.toggle('open');}
-function subForm(e){e.preventDefault();var f=e.target;
-if(f._company && f._company.value){return false;}            /* honeypot: bots fill this, humans never see it */
-var ok=f.querySelector('.sub-ok'),btn=f.querySelector('button[type=submit]');
-var data={name:(f.name.value||''),email:(f.email.value||''),bike:(f.bike.value||''),
-message:(f.message?f.message.value:''),source:location.hostname,page:location.pathname,form:'hitech-website'};
-if(btn){btn.disabled=true;btn.dataset.t=btn.textContent;btn.textContent='Sending...';}
-fetch('https://submit-zuirpy7nza-uc.a.run.app',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-.then(function(r){if(!r.ok)throw r.status;return r.text();})
-.then(function(){f.reset();if(ok){ok.textContent='Thanks \u2014 we got it. We will be in touch.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}})
-.catch(function(){if(ok){ok.textContent='Could not send \u2014 text us at 954.793.6390.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}});
-return false;}
+(function(){var t0=Date.now();function bc(){document.querySelectorAll('form.bc-form').forEach(function(f){f.addEventListener('submit',function(e){var ok=f.querySelector('.sub-ok'),trap=f.querySelector('input[name="website"]'),em=f.querySelector('input[name="email"]');if((trap&&trap.value.trim()!=='')||Date.now()-t0<2500){e.preventDefault();if(ok){ok.textContent='Submission blocked. Please try again.';ok.style.display='block';}return;}if(em&&!em.checkValidity()){e.preventDefault();em.reportValidity();return;}if(ok){ok.textContent='Submitting...';ok.style.display='block';}});});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',bc);}else{bc();}})();
 var VRthumbs=document.querySelectorAll('.vthumb');var vIdx=0,vAuto=true;
 function vLoad(id,play,label){var m=document.getElementById('vrotorMain');if(!m)return;
 if(play){m.innerHTML='<button type="button" class="ytwrap ytcard" data-id="'+id+'"></button>';ytPlay(m.firstChild);return;}

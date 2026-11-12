@@ -352,19 +352,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 <div class="mbar"><a class="mbar-call" href="tel:+19547936390">&#128222; Call</a><a class="mbar-text" href="sms:+19547936390">&#128172; Text</a><a class="mbar-wa" href="https://wa.me/19547936390">WhatsApp</a></div>
 <script>
 function toggleMsg(btn){var w=btn.closest('.msg');if(w)w.classList.toggle('open');}
-function subForm(e){e.preventDefault();var f=e.target;
-if(f._company && f._company.value){return false;}            /* honeypot: bots fill this, humans never see it */
-var ok=f.querySelector('.sub-ok'),btn=f.querySelector('button[type=submit]');
-var data={name:(f.name.value||''),email:(f.email.value||''),bike:(f.bike.value||''),
-message:(f.message?f.message.value:''),source:location.hostname,page:location.pathname,form:'hitech-website'};
-if(btn){btn.disabled=true;btn.dataset.t=btn.textContent;btn.textContent='Sending...';}
-fetch('https://submit-zuirpy7nza-uc.a.run.app',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-.then(function(r){if(!r.ok)throw r.status;return r.text();})
-.then(function(){f.reset();if(ok){ok.textContent='Thanks \u2014 we got it. We will be in touch.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}})
-.catch(function(){if(ok){ok.textContent='Could not send \u2014 text us at 954.793.6390.';ok.style.display='block';}
-if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}});
-return false;}
+(function(){var t0=Date.now();function bc(){document.querySelectorAll('form.bc-form').forEach(function(f){f.addEventListener('submit',function(e){var ok=f.querySelector('.sub-ok'),trap=f.querySelector('input[name="website"]'),em=f.querySelector('input[name="email"]');if((trap&&trap.value.trim()!=='')||Date.now()-t0<2500){e.preventDefault();if(ok){ok.textContent='Submission blocked. Please try again.';ok.style.display='block';}return;}if(em&&!em.checkValidity()){e.preventDefault();em.reportValidity();return;}if(ok){ok.textContent='Submitting...';ok.style.display='block';}});});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',bc);}else{bc();}})();
 var VRthumbs=document.querySelectorAll('.vthumb');var vIdx=0,vAuto=true;
 function vLoad(id,play,label){var m=document.getElementById('vrotorMain');if(!m)return;
 if(play){m.innerHTML='<button type="button" class="ytwrap ytcard" data-id="'+id+'"></button>';ytPlay(m.firstChild);return;}

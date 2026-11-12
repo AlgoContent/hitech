@@ -213,7 +213,7 @@ def render(p):
       p["metatitle"], p["desc"], T.PIXELS, json.dumps(svc), T.CSS(), header(),
       re.sub('&amp;','&',p["service"]), p["kicker"], p["h1"], p["lede"], T.msg_button("Message the Mechanic"),
       bodyhtml, T.msg_button("Message the Mechanic"), T.IG, T.YT,
-      T.reviews_widget(), T.msg_button("Message the Mechanic"), T.subscribe_form("Get shop updates","Send"), footer())
+      T.reviews_widget(), T.msg_button("Message the Mechanic"), T.subscribe_form("Join Bike Culture","Send"), footer())
     return out
 
 for p in PAGES:

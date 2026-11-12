@@ -261,7 +261,7 @@ out = HTML % {"desc":DESC,"kw":KEYWORDS,"site":T.SITE,"schema":schema(),"css":T.
     "addr":T.ADDR,"email":T.EMAIL,"ig":T.IG,"yt":T.YT,"gr":T.GOOGLE_REVIEWS,"js":T.JS,"mbar":T.mobile_bar(),
     "rating":T.RATING,"revcount":T.REVIEW_COUNT,
     "logoband":T.logo_band(),"cattiles":cat_tiles(),
-    "faultsbybrand":faults_by_brand(),"reviews":T.reviews_widget(),"subform":T.subscribe_form("Get the next Issue + shop specials","Send"),
+    "faultsbybrand":faults_by_brand(),"reviews":T.reviews_widget(),"subform":T.subscribe_form("Join Bike Culture","Send"),
     "cover":cover_story(),"partnerlinks":"".join('<a href="%s" target="_blank" rel="sponsored noopener">%s &rarr;</a>'%(u,n) for n,u in T.PARTNERS),
     "msg_small":T.msg_button("Message",big=False),
     "msg_big":T.msg_button("Message the Mechanic"),
