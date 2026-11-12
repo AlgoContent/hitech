@@ -1,6 +1,6 @@
 # HiTECH Motorcycle - Website (hitech00bike.com)
 
-Static site on Vercel. Homepage (magazine Issue 01 + 02, Tech's Ledger faults, reviews, dyno/service lanes),
+Static site on Vercel. Homepage (magazine cover story -> ledger/issue-02.html, Tech's Ledger faults, reviews, dyno/service lanes),
 22 verified Tech's Ledger pages, and 5 service+city landing pages. Built programmatically from
 `data/techs_ledger_verified_starter.csv` + `hitech_theme.py`.
 

@@ -17,6 +17,7 @@
 <meta property="og:image" content="https://hitech00bike.com/assets/images/name.png"><meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="HiTECH Motorcycle | Miramar &amp; South Florida">
 <meta name="twitter:description" content="HiTECH Motorcycle in Miramar, FL: independent motorcycle repair, service, customization and dyno tuning for Harley-Davidson, Ducati, BMW, Triumph and every sport bike. Serving Miami, Fort Lauderdale, Weston and all of South Florida. Rated 4.9 from 97 Google reviews. Tap to message the mechanic."><meta name="twitter:image" content="https://hitech00bike.com/assets/images/name.png">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <!-- ANALYTICS / PIXELS - paste IDs, then uncomment -->
 <!-- Google tag (gtag.js) - replace G-XXXXXXXXXX
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -34,9 +35,11 @@ fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["MotorcycleRepair", "AutoRepair"], "@id": "https://hitech00bike.com/#business", "name": "Hi Tech Motorsports", "alternateName": "HITECH Motorcycle", "image": "https://hitech00bike.com/assets/images/name.png", "telephone": "+19547936390", "email": "ops@hitech00bike.com", "url": "https://hitech00bike.com", "priceRange": "$$", "areaServed": ["Miramar", "Miami", "Miami Beach", "Weston", "Fort Lauderdale", "Hollywood", "Pembroke Pines", "Davie", "Plantation", "Sunrise", "Aventura", "Hialeah", "Broward County", "Miami-Dade", "South Florida"], "address": {"@type": "PostalAddress", "streetAddress": "3056 S State Rd 7 Ste 78", "addressLocality": "Miramar", "addressRegion": "FL", "postalCode": "33023", "addressCountry": "US"}, "geo": {"@type": "GeoCoordinates", "latitude": 25.9876, "longitude": -80.2098}, "sameAs": ["https://www.instagram.com/hi_tech_motorcycles", "https://www.youtube.com/@hitech00BIKE"], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "18:00"}], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "97", "bestRating": "5"}, "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Motorcycle Repair"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dyno Tuning"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ECU Flashing"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Maintenance"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tire Service"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brake Service"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Diagnosis"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Crash Estimates"}}]}, {"@type": "WebSite", "@id": "https://hitech00bike.com/#website", "url": "https://hitech00bike.com", "name": "HITECH Motorcycle", "publisher": {"@id": "https://hitech00bike.com/#business"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where is HiTECH Motorcycle and what are the hours?", "acceptedAnswer": {"@type": "Answer", "text": "HiTECH Motorcycle (Hi Tech Motorsports) is at 3056 S State Rd 7 Ste 78, Miramar, FL 33023, open Tuesday to Saturday 9am-6pm, serving Miami, Fort Lauderdale, Weston and all of South Florida. Call or text 954.793.6390."}}, {"@type": "Question", "name": "Do you do motorcycle dyno tuning in South Florida?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. In-house dyno tuning, ECU flashing and performance work for sport bikes, V-twins and metric bikes across Broward and Miami-Dade."}}, {"@type": "Question", "name": "Do you work on Harley and independent dealership-level repair?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Independent Harley-Davidson, Ducati, BMW, Suzuki, Yamaha, Kawasaki and Honda service without dealership rates."}}, {"@type": "Question", "name": "Do you do motorcycle crash estimates and collision work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Crash estimates, frame and fork inspection, and collision repair for South Florida riders and insurance work."}}]}]}</script>
 <style>
 :root{
- --white:#F5F7FA;--blue:#0057B8;--blue2:#2f86e6;--red:#E30613;--black:#090A0D;
- --silver:#BFC3C8;--panel:#12141B;--panel2:#171A22;--line:rgba(191,195,200,.18);
- --max:1240px;--shadow:0 24px 70px rgba(0,0,0,.55)
+ --white:#E2E4E9;--blue:#0057B8;--blue2:#2f86e6;--red:#E30613;--black:#0E0F12;
+ --silver:#B4B9C1;--panel:#15171C;--panel2:#1A1C22;--line:rgba(191,195,200,.16);
+ --paper:#131418;--ink:#D9DCE2;--gold:#C9A961;
+ --serif:Georgia,'Times New Roman',serif;--mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+ --max:1440px;--shadow:0 24px 70px rgba(0,0,0,.55)
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--black);color:var(--white);font-family:Inter,'Segoe UI',Arial,sans-serif;line-height:1.6;overflow-x:hidden}
@@ -56,7 +59,7 @@ a{color:inherit;text-decoration:none}img,video,iframe{max-width:100%;display:blo
 .msg-actions{display:none;gap:8px;flex-wrap:wrap}
 .msg.open .msg-actions{display:inline-flex}
 .msg.open .msg-toggle{background:var(--blue)}
-.site-header{position:sticky;top:0;z-index:40;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:9px clamp(14px,3.5vw,38px);background:rgba(9,10,13,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:40;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:9px max(clamp(14px,3.5vw,38px),calc((100% - var(--max))/2 + clamp(14px,3.5vw,38px)));background:rgba(14,15,18,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .brandlogo{display:flex;align-items:center;gap:10px}
 .brandlogo img{height:30px;width:auto;background:#fff;padding:5px 9px;border-radius:7px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
 .brand{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:clamp(18px,2.2vw,26px);letter-spacing:.01em;text-transform:uppercase}.brand span{color:var(--red)}
@@ -96,11 +99,12 @@ section{max-width:var(--max);margin:0 auto;padding:44px clamp(14px,3.5vw,38px)}
 .section-head h2{margin:0;font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(24px,3.2vw,40px);line-height:1.04;letter-spacing:.01em}
 .section-head p{color:var(--silver);margin:0;font-size:14px}
 .section-head .bar{height:4px;background:linear-gradient(90deg,var(--red),var(--blue));width:70px;margin-bottom:12px;border-radius:2px}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.cat-tile{position:relative;border:1px solid var(--line);overflow:hidden;background:var(--panel);min-height:180px;display:flex;flex-direction:column;justify-content:flex-end;transition:.2s;border-radius:12px}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat-tile{position:relative;border:1px solid var(--line);overflow:hidden;background:var(--panel);min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;transition:.2s;border-radius:12px}
 .cat-tile:hover{border-color:var(--red);transform:translateY(-4px)}
-.cat-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
-.cat-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(9,10,13,.92))}
+.cat-tile img{color:transparent;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78;transition:transform .4s,opacity .3s}.cat-tile:hover img{transform:scale(1.04);opacity:.92}
+.ct-k{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);padding-bottom:6px!important}
+.cat-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,15,18,.05) 30%,rgba(14,15,18,.95))}
 .cat-tile span{position:relative;z-index:2;padding:0 16px}
 .ct-h{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.01em;line-height:1.05}
 .ct-p{color:var(--silver);font-size:12px;padding-bottom:16px!important;padding-top:6px!important;line-height:1.45}
@@ -115,14 +119,31 @@ section{max-width:var(--max);margin:0 auto;padding:44px clamp(14px,3.5vw,38px)}
 .col-head .col-see{display:inline-block;margin-top:8px;color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--red);padding-bottom:2px}
 .work-rail{display:grid;gap:14px;position:sticky;top:78px}
 .split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
-.mag{background:var(--white);color:var(--black);border:1px solid var(--line);box-shadow:var(--shadow);padding:clamp(20px,3.5vw,38px);border-radius:14px}
-.mag .kicker{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:12px}
-.mag h2{font-family:Georgia,serif;font-size:clamp(23px,3vw,36px);line-height:1.12;margin:8px 0 12px;color:var(--black)}
-.mag h3{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.01em;margin:22px 0 8px;color:var(--black)}
-.mag p{font-family:Georgia,serif;font-size:16px;line-height:1.72;margin:0 0 14px;color:#1a1d24}
-.mag .pull{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:clamp(19px,2.4vw,28px);line-height:1.1;text-transform:uppercase;letter-spacing:.01em;color:var(--blue);border-left:6px solid var(--red);padding:6px 0 6px 16px;margin:20px 0}
-.mag img.mech{width:100%;height:auto;border-radius:10px;border:1px solid rgba(9,10,13,.14);margin:8px 0 16px;background:#0d0f14}
-.mag .ascii{background:#0d0f14;color:#9fe8b4;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.35;padding:14px;border-radius:10px;overflow-x:auto;white-space:pre;margin:12px 0}
+.mag{background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:clamp(20px,3.5vw,38px);border-radius:14px}
+.mag h2{font-family:var(--serif);font-size:clamp(23px,3vw,36px);line-height:1.12;margin:8px 0 12px;color:#fff}
+.mag h3{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.01em;margin:22px 0 8px;color:#fff}
+.mag p{font-family:var(--serif);font-size:16px;line-height:1.72;margin:0 0 14px;color:var(--ink)}
+.mag img.mech{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);margin:8px 0 16px;background:#0d0f14}
+.mag .ascii{background:#0d0f14;color:#9fe8b4;font-family:var(--mono);font-size:12px;line-height:1.35;padding:14px;border-radius:10px;overflow-x:auto;white-space:pre;margin:12px 0}
+/* editorial micro-elements */
+.kicker,.mag .kicker,.stamp{font-family:var(--mono);color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.15em;font-size:11.5px;margin:0 0 10px}
+.stamp b{color:var(--red);font-weight:700}
+.pull,.mag .pull,article.body .pull{position:relative;font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;
+ font-size:clamp(22px,2.6vw,32px);line-height:1.3;color:#fff;background:rgba(201,169,97,.06);border:0;border-top:1px solid rgba(201,169,97,.35);border-bottom:1px solid rgba(201,169,97,.35);
+ padding:34px 26px 26px 72px;margin:34px 0;border-radius:0}
+.pull:before{content:"\201C";position:absolute;left:14px;top:-6px;font-family:var(--serif);font-style:normal;font-size:110px;line-height:1;color:var(--red)}
+.dropcap>p:first-of-type:first-letter,p.dropcap:first-letter{float:left;font-family:var(--serif);font-size:4.6em;line-height:.82;padding:6px 10px 0 0;color:var(--red);font-weight:700}
+figure.fig{margin:22px 0}
+figure.fig .ytwrap{margin:0}
+figure.fig figcaption,figure.photo figcaption{font-family:var(--serif);font-style:italic;font-size:13px;color:#8f95a0;margin-top:8px;line-height:1.5}
+figure.photo{margin:0 0 22px}figure.photo img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+.ytcard{display:block;width:100%;padding:0;cursor:pointer;border:1px solid var(--line);background:#000}
+.ytcard img{color:transparent;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .2s,transform .4s}
+.ytcard:hover img{opacity:1;transform:scale(1.02)}
+.ytcard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(14,15,18,.85))}
+.ytplay{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--red);z-index:2;box-shadow:0 10px 30px rgba(227,6,19,.45)}
+.ytplay:after{content:"";position:absolute;left:30px;top:22px;border-style:solid;border-width:16px 0 16px 24px;border-color:transparent transparent transparent #fff}
+.ytlabel{position:absolute;left:16px;bottom:12px;z-index:2;font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff}
 .issuetabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
 .issuetabs button{border:1px solid var(--line);background:var(--panel);color:var(--silver);border-radius:999px;padding:8px 14px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12px;cursor:pointer}
 .issuetabs button.on{background:var(--red);color:#fff;border-color:var(--red)}
@@ -142,7 +163,7 @@ section{max-width:var(--max);margin:0 auto;padding:44px clamp(14px,3.5vw,38px)}
 .rev-card{display:none;color:var(--silver);font-size:14px;line-height:1.5;border-left:3px solid var(--red);padding-left:12px}
 .rev-card.on{display:block}
 .subcard form{display:grid;gap:8px}
-.subcard input,.subcard textarea{background:var(--black);border:1px solid var(--line);color:#fff;padding:11px 12px;border-radius:8px;font-size:14px;font-family:inherit;resize:vertical}
+.subcard input,.subcard textarea{background:#0b0c0f;border:1px solid var(--line);color:#fff;padding:11px 12px;border-radius:8px;font-size:14px;font-family:inherit;resize:vertical}
 .subcard input::placeholder,.subcard textarea::placeholder{color:#7f8590}
 .hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none}
 .sub-ok{display:none;color:#8ff0a6;font-size:13px;margin:4px 0 0;line-height:1.4}
@@ -176,7 +197,7 @@ section{max-width:var(--max);margin:0 auto;padding:44px clamp(14px,3.5vw,38px)}
 .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .faq-grid details{border:1px solid var(--line);padding:16px;background:var(--panel);border-radius:10px}
 .faq-grid summary{font-weight:800;cursor:pointer;color:#fff}.faq-grid p{color:var(--silver);font-size:14px;margin:10px 0 0}
-.footer{max-width:var(--max);margin:0 auto;padding:36px clamp(14px,3.5vw,38px) 90px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:22px;color:var(--silver)}
+.footer{max-width:var(--max);margin:0 auto;padding:36px clamp(14px,3.5vw,38px) 90px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;color:var(--silver)}
 .footer strong{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;color:#fff;font-size:22px;text-transform:uppercase;letter-spacing:.02em;display:block;margin-bottom:8px}
 .footer a{display:block;padding:4px 0;color:var(--silver)}.footer a:hover{color:#fff}
 .footer iframe{width:100%;height:160px;border:1px solid var(--line);border-radius:10px}
@@ -190,34 +211,61 @@ section{max-width:var(--max);margin:0 auto;padding:44px clamp(14px,3.5vw,38px)}
 /* article (ledger / landing) */
 .wrap{max-width:var(--max);margin:0 auto;padding:28px clamp(14px,3.5vw,38px) 80px}
 .crumbs{color:var(--silver);font-size:13px;margin-bottom:12px}.crumbs a:hover{color:#fff}
-.lede-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
-.kicker{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 8px}
+.lede-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.lede-grid article.body{margin-top:8px}
+/* cover story (homepage) */
+.cover{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
+.cover-img{position:relative;min-height:420px;display:block;background:#000}
+.cover-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover-img:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 55%,var(--paper) 100%),radial-gradient(ellipse at 45% 50%,transparent 55%,rgba(14,15,18,.55) 100%)}
+.cover-img .stamp{position:absolute;left:18px;top:16px;z-index:2;background:rgba(14,15,18,.82);padding:7px 10px;border-radius:4px;margin:0}
+.cover-copy{padding:clamp(22px,3.2vw,40px);display:flex;flex-direction:column;gap:14px;justify-content:center}
+.cover-copy h3{margin:0;font-family:var(--serif);font-size:clamp(26px,3vw,40px);line-height:1.1;color:#fff;font-weight:700}
+.cover-copy p{margin:0;font-family:var(--serif);font-size:17px;line-height:1.65;color:var(--ink)}
+.inissue{border-top:1px solid var(--line);padding-top:12px;font-size:13px;color:var(--silver)}
+.inissue b{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px;font-weight:700}
+.backissue{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:14px;border:1px solid var(--line);border-radius:12px;padding:16px 20px;background:var(--panel)}
+.backissue h4{margin:4px 0 0;font-family:var(--serif);font-size:20px;color:#fff;font-weight:700}
+.backissue .stamp{margin:0}
+/* issue reading page */
+.readbar{position:fixed;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--red),var(--gold));z-index:80}
+.issue-hero{position:relative;max-width:var(--max);margin:0 auto;padding:0 clamp(14px,3.5vw,38px)}
+.issue-hero figure{margin:0}
+.issue-hero img{width:100%;height:clamp(260px,46vw,560px);object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+.issue-title{max-width:980px}
+.issue-title h1{font-family:var(--serif)!important;text-transform:none!important;font-size:clamp(32px,4.6vw,60px)!important;line-height:1.06!important;letter-spacing:-.01em!important}
+.issue-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:start;margin-top:26px}
+.issue-grid article.body{margin-top:0;padding:clamp(22px,4vw,56px)}
+.issue-grid article.body p{font-size:18px;max-width:700px}
+.issue-grid article.body h3{font-family:'Arial Narrow',Impact,sans-serif;text-transform:uppercase;color:#fff;font-size:22px;margin:30px 0 10px}
+.bookcard{border:1px solid rgba(227,6,19,.55);background:linear-gradient(160deg,rgba(227,6,19,.16),var(--panel));padding:18px;border-radius:12px}
+.bookcard h4{margin:6px 0 8px;font-family:'Arial Narrow',Impact,sans-serif;text-transform:uppercase;font-size:20px;color:#fff;line-height:1.1}
+.bookcard p{color:var(--silver);font-size:13px;margin:0 0 12px}
 .wrap h1{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(26px,4vw,48px);line-height:1.05;letter-spacing:.01em;margin:6px 0 14px}
 .deck{font-size:clamp(15px,1.7vw,19px);color:var(--silver);max-width:720px;line-height:1.6}
 .meta-row{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px}
 .tag{border:1px solid var(--line);border-radius:999px;padding:6px 11px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--silver)}
 .tag.red{border-color:rgba(227,6,19,.6);color:#ff8b92}.tag.blue{border-color:rgba(0,87,184,.6);color:#9cc3ff}
 .tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0;align-items:center}
-article.body{background:var(--white);color:var(--black);border:1px solid var(--line);box-shadow:var(--shadow);padding:clamp(20px,3.5vw,44px);margin-top:24px;border-radius:14px}
-article.body h2{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(21px,2.6vw,30px);letter-spacing:.01em;margin:26px 0 12px;line-height:1.08;color:var(--black)}
+article.body{background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:clamp(20px,3.5vw,44px);margin-top:24px;border-radius:14px}
+article.body h2{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(21px,2.6vw,30px);letter-spacing:.01em;margin:26px 0 12px;line-height:1.08;color:#fff}
 article.body h2:first-child{margin-top:0}
-article.body p{font-family:Georgia,serif;font-size:17px;line-height:1.75;margin:0 0 16px;max-width:780px;color:#1a1d24}
-article.body .pull{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;font-size:clamp(19px,2.4vw,30px);line-height:1.1;text-transform:uppercase;letter-spacing:.01em;color:var(--blue);border-left:6px solid var(--red);padding:8px 0 8px 16px;margin:24px 0}
+article.body p{font-family:var(--serif);font-size:17px;line-height:1.75;margin:0 0 16px;max-width:760px;color:var(--ink)}
 ol.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 18px;max-width:780px}
-ol.steps li{position:relative;padding:13px 16px 13px 54px;border:1px solid rgba(9,10,13,.14);background:#fff;border-radius:10px;margin-bottom:9px;font-family:Inter,Arial,sans-serif;font-size:15px;line-height:1.5;color:#1a1d24}
+ol.steps li{position:relative;padding:13px 16px 13px 54px;border:1px solid var(--line);background:var(--panel);border-radius:10px;margin-bottom:9px;font-family:Inter,Arial,sans-serif;font-size:15px;line-height:1.5;color:var(--ink)}
 ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:13px;top:12px;width:28px;height:28px;border-radius:6px;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
-.callout{border-left:5px solid var(--red);background:#fff;padding:15px 18px;margin:20px 0;border-radius:0 10px 10px 0}
+.callout{border-left:5px solid var(--red);background:var(--panel);padding:15px 18px;margin:20px 0;border-radius:0 10px 10px 0}
 .callout b{display:block;text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--red);margin-bottom:6px;font-family:Inter,Arial,sans-serif}
-.verify{border:1px dashed var(--blue);background:#eef4ff;padding:15px 18px;border-radius:10px;margin:22px 0;font-family:Inter,Arial,sans-serif;font-size:14px;color:#1a1d24}
-.verify a{color:var(--blue);text-decoration:underline;word-break:break-all}
+.verify{border:1px dashed var(--blue2);background:rgba(0,87,184,.10);padding:15px 18px;border-radius:10px;margin:22px 0;font-family:Inter,Arial,sans-serif;font-size:14px;color:var(--ink)}
+.verify a{color:var(--blue2);text-decoration:underline;word-break:break-all}
 .cta-block{margin-top:24px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(227,6,19,.16),rgba(0,87,184,.14));padding:22px;display:grid;gap:12px;border-radius:14px}
 .cta-block h3{font-family:'Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(20px,2.4vw,30px);margin:0;line-height:1.08;color:#fff}
 .cta-block p{margin:0;color:var(--silver);font-size:14px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;align-items:center}
 .relband a{display:block;color:var(--silver);font-size:13px;padding:6px 0;border-bottom:1px solid var(--line)}.relband a:hover{color:#fff}
 @media(max-width:980px){
  .site-header{grid-template-columns:1fr}.nav-links{justify-content:flex-start}
- .hero{grid-template-columns:1fr}.cat-grid{grid-template-columns:repeat(2,1fr)}
- .work-split,.split,.lede-grid{grid-template-columns:1fr}.rail,.work-rail{position:static}
+ .hero{grid-template-columns:1fr}.cat-grid{grid-template-columns:1fr}.cat-tile{min-height:220px}
+ .work-split,.split,.lede-grid,.issue-grid,.cover{grid-template-columns:1fr}.cover-img{min-height:240px}.backissue{flex-direction:column;align-items:flex-start}.rail,.work-rail{position:static}
  .lgrid,.lgrid.two{grid-template-columns:1fr}.faq-grid,.section-head{grid-template-columns:1fr}.footer{grid-template-columns:1fr}
  .ledger-scroll{max-height:none}
 }
@@ -246,7 +294,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 </div>
 </div>
 <aside class="hero-rail">
-<div class="video-card"><video autoplay muted loop playsinline poster="assets/images/mechanic.png"><source src="assets/video/hype-11.mp4" type="video/mp4"></video>
+<div class="video-card"><video autoplay muted loop playsinline poster="assets/images/mechanic.png"><source src="assets/video/hype-11-red.mp4" type="video/mp4"></video>
 <div class="video-cap"><h2>In the shop. On the road.</h2><p>This is what your bike sounds like when it is right.</p></div></div>
 <div class="contact-card" id="contact">
 <p class="eyebrow">Contact the shop</p>
@@ -261,48 +309,12 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 
 <section id="services">
 <div class="section-head"><div><div class="bar"></div><p class="eyebrow">What we do</p><h2>Repair. Service. Customize. Then tune.</h2></div><p>Harley, European and metric &mdash; tap a lane to see the work behind it.</p></div>
-<div class="cat-grid"><a class="cat-tile" href="motorcycle-repair-miramar-fl.html"><img src="assets/images/repairs.png" alt="motorcycle repairs &amp; service Miramar South Florida"><span class="ct-h">Repairs &amp; Service</span><span class="ct-p">No-starts, electrical, brakes, diagnostics, recalls.</span></a><a class="cat-tile" href="motorcycle-repair-miramar-fl.html"><img src="assets/images/maintenance.png" alt="motorcycle maintenance Miramar South Florida"><span class="ct-h">Maintenance</span><span class="ct-p">Fluids, tires, chains, valve service, intervals.</span></a><a class="cat-tile" href="custom-builds-south-florida.html"><img src="assets/images/motorcycle.png" alt="motorcycle customization Miramar South Florida"><span class="ct-h">Customization</span><span class="ct-p">Harley &amp; European builds, bags, bars, stance, wiring.</span></a><a class="cat-tile" href="dyno-tuning-south-florida.html"><img src="assets/images/performance.png" alt="motorcycle dyno &amp; performance Miramar South Florida"><span class="ct-h">Dyno &amp; Performance</span><span class="ct-p">Dyno tuning, ECU flashing, exhaust, top-end.</span></a></div>
+<div class="cat-grid"><a class="cat-tile" href="motorcycle-repair-miramar-fl.html"><img loading="lazy" src="https://i.ytimg.com/vi/MVhGRyn4E8A/hqdefault.jpg" alt="repairs and maintenance at HiTECH Motorcycle, Miramar FL"><span class="ct-k">Lane 01</span><span class="ct-h">Repairs &amp; Maintenance</span><span class="ct-p">No-starts, electrical, brakes, diagnostics, recalls &mdash; plus fluids, tires, chains, valve service and intervals.</span></a><a class="cat-tile" href="custom-builds-south-florida.html"><img loading="lazy" src="https://i.ytimg.com/vi/TdJlFX8Us2w/hqdefault.jpg" alt="customization at HiTECH Motorcycle, Miramar FL"><span class="ct-k">Lane 02</span><span class="ct-h">Customization</span><span class="ct-p">Harley &amp; European builds, bags, bars, stance, wiring.</span></a><a class="cat-tile" href="dyno-tuning-south-florida.html"><img loading="lazy" src="assets/images/thumb-performance.jpg" alt="dyno and performance at HiTECH Motorcycle, Miramar FL"><span class="ct-k">Lane 03</span><span class="ct-h">Dyno &amp; Performance</span><span class="ct-p">Dyno tuning, ECU flashing, exhaust, top-end.</span></a></div>
 </section>
 
 <section id="magazine">
-<div class="section-head"><div><div class="bar"></div><p class="eyebrow">HITECH Magazine</p><h2>The Tech&rsquo;s Ledger, long form.</h2></div><p>Seasonal prep and straight talk from the lifts in Miramar.</p></div>
-<div class="split">
-<div>
-<div class="issuetabs"><button class="on" onclick="showIssue(2,this)">Issue 02 &middot; Winter</button><button onclick="showIssue(1,this)">Issue 01 &middot; Summer</button></div>
-<article class="mag issuepane on" id="issue2">
-<p class="kicker">Issue 02 / Fall &amp; Winter &middot; Prime Riding Season</p>
-<h2>South Florida Prime Riding Season: What to Inspect Before the First Big Run.</h2>
-<div class="ytwrap"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/TdJlFX8Us2w?rel=0" title="HiTECH Motorcycle cruiser service" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-<p>November through April is what the rest of the country dreams about. The 3pm downpours have cleared, the humidity breaks, mornings drop into the 60s, and riders are pulling bikes out of carports from West Palm down to Miami. US-27 to Lake Okeechobee, Alligator Alley, Card Sound Road into the Keys &mdash; this is peak season.</p>
-<p>The catch: a bike that sat under a cover through four months of monsoon season is not ready for an eight-hour run just because you wiped the dust off the seat. Between humidity, salt air, and ethanol fuel breakdown, idle bikes hide problems that only show up at 75 mph.</p>
-<div class="pull">A bike that sat all summer isn't ready for the highway just because it starts in the driveway.</div>
-<h3>The monsoon fuel-pump trap</h3>
-<p>The most common breakdown we diagnose when the dry season starts is a failing or seized fuel pump &mdash; hard starts, backfiring, or stalling 10 to 15 minutes in. Clogged gas-cap weep holes let rainwater pool and drop into the tank. South Florida E10 pump gas is hygroscopic: water bonds with the ethanol and sinks to the bottom, right where the pump pickup sits. Instead of fuel, the pump draws a corrosive water-and-ethanol slurry.</p>
-<p>The tell: a loud screeching whine on prime instead of a clean two-second hum; idles on the stand but starves under load; cuts out after 15 minutes once the pump heats up. The fix is to drain the tank, scope the interior for flash rust, flush it, and replace the pump and filter before you cook your injectors.</p>
-<div class="ytwrap"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/MVhGRyn4E8A?rel=0" title="HiTECH Motorcycle fuel and oil service" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-<h3>The pre-run checklist</h3>
-<p>Four systems before you load the saddlebags. Tires: our flat, straight roads square off the center strip and leave a ridge that makes the bike resist leaning, then fall into the turn &mdash; and replace any tire with a DOT date over five years no matter the tread. Brake fluid: DOT 4 and 5.1 absorb water through the lines; dark, tea-colored fluid boils under load and fades the lever to the grip. Battery: summer heat kills the plates and the first cold snap exposes it &mdash; you want 12.6 to 12.8V at rest, and it's done if it drops below 10.5V cranking.</p>
-<h3>By platform</h3>
-<p><strong>Harley &amp; V-twins:</strong> milky primary oil means condensation &mdash; flush it; listen for compensator slap on cold start; inspect the drive belt for stone punctures and the stator plug near the lower crankcase for grime. <strong>Japanese sport bikes:</strong> salt air pits fork stanchions that then slice the seals onto your brakes; a chain left un-lubed after soaked rides rusts and robs power; clean caked radiator fins before you sit in A1A beach traffic. <strong>Italian &amp; European:</strong> check hydraulic clutch slave cylinders for weeping; these ECUs hate low voltage and throw ABS and quickshifter faults below spec; and Ducati timing belts age out regardless of miles &mdash; a snapped belt is valve-to-piston contact.</p>
-<p>Riding season only lasts so long. Spending the best weekends waiting for a tow is avoidable with 45 minutes of bench prep. If your bike sat unstarted or took on summer rain, get it on a lift before the long miles.</p>
-<div class="ytwrap"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/i4m64buhuKA?rel=0" title="HiTECH Motorcycle valve service" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-</article>
-<article class="mag issuepane" id="issue1">
-<p class="kicker">Issue 01 / Summer Service</p>
-<h2>Summer Is Here. Prep the Bike for Sunset Rides.</h2>
-<img class="mech" src="assets/images/mechanic2.png" alt="HITECH mechanic working on a motorcycle in South Florida">
-<p>You walk toward the bike while the heat is still lifting off the pavement. Softer light, cleaner shadows, a road that stops looking like a commute and starts looking like an invitation. This is the hour motorcycles make the most sense. You are not escaping the day. You are finishing it right.</p>
-<p>The sunset ride looks effortless from the outside, but the bike does not feel it as a postcard. It feels the hot start, the traffic crawl, the sudden throttle, the brake squeeze at the last yellow, the fan cycling, the chain load, and every small weakness you hoped would stay quiet.</p>
-<div class="pull">You do not prep the bike because you fear the ride. You prep it because you respect it.</div>
-<p>Start with the tires: pressure cold, tread read like evidence, sidewalls checked. A cupping front feels vague in a lean; old rubber does not get safer at sunset, just prettier. Then heat: coolant level, fan operation, radiator clear. A bike that suddenly runs hotter than usual is talking &mdash; listen before it shouts. Brakes get the same respect: squeeze the lever and notice firm, soft, spongy, pulsing, or late.</p>
-<p>The fastest way to catch a problem is to notice the first difference, not the final failure. Did it sit too long? Did the battery struggle? Did the idle change? When you feel that first difference, send it. That is the whole point of having a shop you trust on the other end of a message.</p>
-</article>
-</div>
-<aside class="rail">
-<div class="card aff"><h4>Partners</h4><a href="https://www.realfimodel.com" target="_blank" rel="sponsored noopener"><b>RealFi Model</b><span>Partner &rarr;</span></a><a href="https://www.dividond.com" target="_blank" rel="sponsored noopener"><b>Dividond</b><span>Partner &rarr;</span></a><a href="https://www.coffeebarroasters.com" target="_blank" rel="sponsored noopener"><b>Coffee Bar Roasters</b><span>Partner &rarr;</span></a></div>
-<div class="card aff"><h4>Follow</h4><a href="https://www.instagram.com/hi_tech_motorcycles" target="_blank" rel="me noopener"><b>Instagram</b><span>@hi_tech_motorcycles &rarr;</span></a><a href="https://www.youtube.com/@hitech00BIKE" target="_blank" rel="me noopener"><b>YouTube</b><span>@hitech00BIKE &rarr;</span></a></div>
-</aside>
-</div>
+<div class="section-head"><div><div class="bar"></div><p class="eyebrow">HITECH Magazine</p><h2>The Cover Story.</h2></div><p>Seasonal prep and straight talk from the lifts in Miramar.</p></div>
+<div class="cover"><a class="cover-img" href="ledger/issue-02.html"><img loading="lazy" src="assets/images/cover-issue02.jpg" alt="HiTECH mechanic on a red sport bike, Issue 02 cover"><span class="stamp">Cover Story</span></a><div class="cover-copy"><p class="stamp">Issue 02 <b>//</b> Technical Dispatch <b>//</b> Miami-Broward</p><h3>South Florida Prime Riding Season: What to Inspect Before the First Big Run.</h3><p>November through April is what the rest of the country dreams about. But a bike that sat under a cover through four months of monsoon season hides problems that only show up at 75 mph &mdash; and most of them start in the fuel tank.</p><div class="inissue"><b>In this issue</b>Fuel-pump failures, hurricane-humidity traps &amp; the pre-run checklist.</div><div><a class="button button-red" href="ledger/issue-02.html">Read Full Issue &middot; 3 Min Read</a></div></div></div><a class="backissue" href="ledger/issue-01.html"><div><p class="stamp">Back Issue <b>//</b> Issue 01 <b>//</b> Summer</p><h4>Summer Is Here. Prep the Bike for Sunset Rides.</h4></div><span class="button button-ghost">Read Issue 01 &middot; 2 Min</span></a>
 </section>
 
 <section id="faults">
@@ -321,7 +333,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 
 <section id="videos">
 <div class="section-head"><div><div class="bar"></div><p class="eyebrow">Watch</p><h2>From the shop floor.</h2></div><p>Real work on real bikes. More on <a href="https://www.youtube.com/@hitech00BIKE" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">YouTube @hitech00BIKE</a>.</p></div>
-<div class="vrotor"><div class="ytwrap vrotor-main"><iframe id="vrotorFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/TdJlFX8Us2w?rel=0" title="HITECH Motorcycle shop video" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="vrotor-strip"><button type="button" class="vthumb on" data-id="TdJlFX8Us2w" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/TdJlFX8Us2w/mqdefault.jpg" alt="Cruiser build"><span>Cruiser build</span></button><button type="button" class="vthumb" data-id="k9_scg88oqQ" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/k9_scg88oqQ/mqdefault.jpg" alt="Harley short"><span>Harley short</span></button><button type="button" class="vthumb" data-id="smVENbJfOvc" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/smVENbJfOvc/mqdefault.jpg" alt="Yamaha service"><span>Yamaha service</span></button><button type="button" class="vthumb" data-id="gOxCroShxfA" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/gOxCroShxfA/mqdefault.jpg" alt="Kawasaki service"><span>Kawasaki service</span></button><button type="button" class="vthumb" data-id="P54eoe9m_Lk" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/P54eoe9m_Lk/mqdefault.jpg" alt="Suzuki service"><span>Suzuki service</span></button><button type="button" class="vthumb" data-id="i4m64buhuKA" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/i4m64buhuKA/mqdefault.jpg" alt="Valve service"><span>Valve service</span></button><button type="button" class="vthumb" data-id="MVhGRyn4E8A" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/MVhGRyn4E8A/mqdefault.jpg" alt="Oil service"><span>Oil service</span></button></div></div>
+<div class="vrotor"><div class="vrotor-main" id="vrotorMain"><button type="button" class="ytwrap ytcard" id="vrotorCard" data-id="TdJlFX8Us2w" onclick="ytPlay(this)" aria-label="Play: Cruiser build"><img id="vrotorImg" src="https://i.ytimg.com/vi/TdJlFX8Us2w/hqdefault.jpg" alt="Cruiser build"><span class="ytplay" aria-hidden="true"></span><span class="ytlabel" id="vrotorLabel">Watch &middot; Cruiser build</span></button></div><div class="vrotor-strip"><button type="button" class="vthumb on" data-id="TdJlFX8Us2w" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/TdJlFX8Us2w/mqdefault.jpg" alt="Cruiser build"><span>Cruiser build</span></button><button type="button" class="vthumb" data-id="k9_scg88oqQ" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/k9_scg88oqQ/mqdefault.jpg" alt="Harley short"><span>Harley short</span></button><button type="button" class="vthumb" data-id="smVENbJfOvc" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/smVENbJfOvc/mqdefault.jpg" alt="Yamaha service"><span>Yamaha service</span></button><button type="button" class="vthumb" data-id="gOxCroShxfA" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/gOxCroShxfA/mqdefault.jpg" alt="Kawasaki fuel pump"><span>Kawasaki fuel pump</span></button><button type="button" class="vthumb" data-id="P54eoe9m_Lk" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/P54eoe9m_Lk/mqdefault.jpg" alt="Suzuki service"><span>Suzuki service</span></button><button type="button" class="vthumb" data-id="i4m64buhuKA" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/i4m64buhuKA/mqdefault.jpg" alt="Valve service"><span>Valve service</span></button><button type="button" class="vthumb" data-id="MVhGRyn4E8A" onclick="pickVid(this)"><img loading="lazy" src="https://i.ytimg.com/vi/MVhGRyn4E8A/mqdefault.jpg" alt="Oil service"><span>Oil service</span></button></div></div>
 </section>
 
 <section id="faq">
@@ -345,6 +357,7 @@ ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left
 <div><strong>Find Us</strong>
 <iframe title="HiTECH Motorcycle map" src="https://www.google.com/maps?q=3056+S+State+Rd+7,+Miramar,+FL+33023&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+<div><strong>Partners</strong><a href="https://www.realfimodel.com" target="_blank" rel="sponsored noopener">RealFi Model &rarr;</a><a href="https://www.dividond.com" target="_blank" rel="sponsored noopener">Dividond &rarr;</a><a href="https://www.coffeebarroasters.com" target="_blank" rel="sponsored noopener">Coffee Bar Roasters &rarr;</a></div>
 <div><strong>Follow</strong>
 <a href="https://www.instagram.com/hi_tech_motorcycles" rel="me">Instagram &rarr;</a><a href="https://www.youtube.com/@hitech00BIKE" rel="me">YouTube @hitech00BIKE &rarr;</a>
 <a href="https://www.google.com/maps/search/?api=1&query=Hi+Tech+Motorsports+3056+S+State+Rd+7+Miramar+FL+33023" target="_blank" rel="noopener">Google Reviews &rarr;</a><a href="mailto:ops@hitech00bike.com">ops@hitech00bike.com</a>
@@ -367,12 +380,18 @@ if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}})
 if(btn){btn.disabled=false;btn.textContent=btn.dataset.t||'Send';}});
 return false;}
 var VRthumbs=document.querySelectorAll('.vthumb');var vIdx=0,vAuto=true;
-function vLoad(id,play){var fr=document.getElementById('vrotorFrame');if(fr)fr.src='https://www.youtube-nocookie.com/embed/'+id+'?rel=0'+(play?'&autoplay=1':'');}
+function vLoad(id,play,label){var m=document.getElementById('vrotorMain');if(!m)return;
+if(play){m.innerHTML='<button type="button" class="ytwrap ytcard" data-id="'+id+'"></button>';ytPlay(m.firstChild);return;}
+var c=document.getElementById('vrotorCard');if(!c)return;c.dataset.id=id;document.getElementById('vrotorImg').src='https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';
+document.getElementById('vrotorLabel').textContent='Watch · '+(label||'');}
 function pickVid(btn){vAuto=false;VRthumbs.forEach(function(b){b.classList.remove('on');});btn.classList.add('on');vLoad(btn.dataset.id,true);}
-if(VRthumbs.length>1){setInterval(function(){if(!vAuto)return;vIdx=(vIdx+1)%VRthumbs.length;VRthumbs.forEach(function(b){b.classList.remove('on');});VRthumbs[vIdx].classList.add('on');vLoad(VRthumbs[vIdx].dataset.id,false);},9000);}
+if(VRthumbs.length>1){setInterval(function(){if(!vAuto)return;vIdx=(vIdx+1)%VRthumbs.length;VRthumbs.forEach(function(b){b.classList.remove('on');});if(!document.getElementById('vrotorCard')){vAuto=false;return;}VRthumbs[vIdx].classList.add('on');vLoad(VRthumbs[vIdx].dataset.id,false,VRthumbs[vIdx].textContent);},9000);}
+function ytPlay(b){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?rel=0&autoplay=1';
+f.title=b.getAttribute('aria-label')||'HITECH video';f.referrerPolicy='strict-origin-when-cross-origin';f.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';f.allowFullscreen=true;f.setAttribute('frameborder','0');
+var w=document.createElement('div');w.className='ytwrap';w.appendChild(f);b.replaceWith(w);}
+(function(){var bar=document.querySelector('.readbar');if(!bar)return;window.addEventListener('scroll',function(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?h.scrollTop/m*100:0)+'%';},{passive:true});})();
 (function(){var cards=document.querySelectorAll('.rev-card');if(cards.length<2)return;var i=0;
 setInterval(function(){cards[i].classList.remove('on');i=(i+1)%cards.length;cards[i].classList.add('on');},4200);})();
 </script>
-<script>function showIssue(n,btn){document.querySelectorAll('.issuepane').forEach(function(p){p.classList.remove('on')});document.getElementById('issue'+n).classList.add('on');document.querySelectorAll('.issuetabs button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');}</script>
 </body>
 </html>

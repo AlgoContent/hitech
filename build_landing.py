@@ -92,7 +92,7 @@ PAGES = [
  "kw":"motorcycle dyno tuning south florida, dyno tune motorcycle miami, ecu flashing motorcycle near me, sport bike performance shop south florida, custom motorcycle exhaust installation near me, motorcycle tuner miramar, harley dyno tune",
  "kicker":"Dyno &amp; Performance","h1":"Motorcycle Dyno Tuning &amp; ECU Flashing in South Florida",
  "lede":"A mod without a tune is not performance &mdash; it is imbalance. We put your bike on the dyno, read what it is actually doing, and dial the fuel and timing to match the hardware. Miramar-based, serving Miami, Fort Lauderdale and all of Broward and Miami-Dade.",
- "vids":["smVENbJfOvc","gOxCroShxfA"],
+ "vids":["smVENbJfOvc"],   # Kawasaki clip is a fuel-pump job - it lives in Issue 02, not the dyno page
  "sec":[("Why a dyno tune, and why now",
    ["You bolted on an exhaust, a filter, a full system, maybe a different sprocket. The bike feels different, but different is not the same as right. The stock map was written for stock airflow, and the moment you change how the engine breathes, the fueling is guessing. On the dyno we stop guessing: we measure air-fuel ratio under load, across the whole rpm range, and build a map that matches the parts actually on the bike.",
     "This is the single highest-value thing you can do to a modified bike, and it is the thing most riders skip because the bike still runs. It runs lean in the spots that cook pistons and rich in the spots that foul plugs and dump fuel economy. A proper tune cleans both up, and you feel it everywhere &mdash; smoother roll-on, cleaner throttle, no surging at cruise, and real, measured power instead of a number off a forum."]),
@@ -111,7 +111,7 @@ PAGES = [
  "kw":"sport bike maintenance south florida, yamaha kawasaki sport bike mechanic near me, suzuki gsxr specialist south florida, r1 r6 service, zx-10r service, fork seal replacement, sport bike dyno tune miami, honda cbr service",
  "kicker":"Sport Bikes","h1":"Sport Bike Maintenance &amp; Dyno Tuning in South Florida",
  "lede":"GSX-R, R1, R6, ZX, CBR &mdash; precision machines that punish neglect fast. Fork seals, chains, cooling, brakes and the dyno work that makes the mods real. Miramar-based, serving Miami, Fort Lauderdale and all of Broward.",
- "vids":["smVENbJfOvc","gOxCroShxfA","P54eoe9m_Lk"],
+ "vids":["smVENbJfOvc","P54eoe9m_Lk"],
  "sec":[("Maintenance a sport bike actually needs",
    ["A sport bike rewards precision and punishes neglect faster than any other machine. Chain slack and O-ring integrity, fork seals and stanchion condition, coolant and fan operation, brake fluid and pad life, steering head bearings &mdash; these are the items that decide whether the bike feels sharp or nervous at speed. Miss them and the first warning you get is mid-corner.",
     "We set these bikes up properly: chain and sprockets, suspension sag and seals, cooling system verified under heat, and brakes bled to a firm lever. Then the bike does what the spec sheet promised instead of fighting you into the apex."]),
@@ -195,25 +195,25 @@ def render(p):
 <h1>%s</h1>
 <p class="deck">%s</p>
 <div class="tools">%s<a class="button button-ghost" href="ledger/index.html">Tech&rsquo;s Ledger</a></div>
-</div>
-<aside class="rail">%s
-<div class="card"><h4>Talk to the mechanic</h4><p style="margin:0 0 10px">Year, make, model, mileage, and what you need. A clip beats a paragraph.</p>%s</div>
-%s</aside>
-</div>
 <article class="body">
 %s
 <div class="cta-block"><h3>Ready when you are.</h3>
 <p>Tap to message the mechanic, or stop by the Miramar shop Tuesday to Saturday, 9 to 6. Serving Miami, Fort Lauderdale, Weston and all of South Florida.</p>
 <div class="cta-actions">%s<a class="button button-ghost" href="%s">Follow on IG</a><a class="button button-ghost" href="%s">YouTube</a></div></div>
 </article>
+</div>
+<aside class="rail">%s
+<div class="card"><h4>Talk to the mechanic</h4><p style="margin:0 0 10px">Year, make, model, mileage, and what you need. A clip beats a paragraph.</p>%s</div>
+%s</aside>
+</div>
 </main>
 %s
 </body></html>""" % (
       p["metatitle"], p["desc"], p["kw"], T.SITE, p["slug"], p["metatitle"], p["desc"], T.SITE, p["slug"], T.SITE,
       p["metatitle"], p["desc"], T.PIXELS, json.dumps(svc), T.CSS(), header(),
       re.sub('&amp;','&',p["service"]), p["kicker"], p["h1"], p["lede"], T.msg_button("Message the Mechanic"),
-      T.reviews_widget(), T.msg_button("Message the Mechanic"), T.subscribe_form("Get shop updates","Send"),
-      bodyhtml, T.msg_button("Message the Mechanic"), T.IG, T.YT, footer())
+      bodyhtml, T.msg_button("Message the Mechanic"), T.IG, T.YT,
+      T.reviews_widget(), T.msg_button("Message the Mechanic"), T.subscribe_form("Get shop updates","Send"), footer())
     return out
 
 for p in PAGES:

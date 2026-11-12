@@ -21,6 +21,8 @@ def w(rel, text):
 urls=[(SITE+"/","1.0","weekly")]
 for s in LANDING: urls.append((SITE+"/"+s+".html","0.9","monthly"))
 urls.append((SITE+"/ledger/index.html","0.9","weekly"))
+urls.append((SITE+"/ledger/issue-02.html","0.8","monthly"))
+urls.append((SITE+"/ledger/issue-01.html","0.6","yearly"))
 for r in ROWS: urls.append((SITE+"/ledger/"+r["page_slug"]+".html","0.8","monthly"))
 sm=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for loc,pr,ch in urls: sm.append("  <url><loc>%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority></url>"%(loc,TODAY,ch,pr))
@@ -154,7 +156,7 @@ w("social/social-posts.md",social)
 # README
 readme="""# HiTECH Motorcycle - Website (hitech00bike.com)
 
-Static site on Vercel. Homepage (magazine Issue 01 + 02, Tech's Ledger faults, reviews, dyno/service lanes),
+Static site on Vercel. Homepage (magazine cover story -> ledger/issue-02.html, Tech's Ledger faults, reviews, dyno/service lanes),
 22 verified Tech's Ledger pages, and 5 service+city landing pages. Built programmatically from
 `data/techs_ledger_verified_starter.csv` + `hitech_theme.py`.
 

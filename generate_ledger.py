@@ -92,7 +92,7 @@ def footer():
 
 def video_card():
     return ('<div class="video-card" style="min-height:210px"><video autoplay muted loop playsinline poster="../assets/images/mechanic.png">'
-            '<source src="../assets/video/hype-11.mp4" type="video/mp4"></video></div>')
+            '<source src="../assets/video/hype-11-red.mp4" type="video/mp4"></video></div>')
 
 def build_body(r, related):
     b, m = esc(r["brand"]), esc(r["model"])
@@ -201,14 +201,6 @@ def page(r, related):
 <p class="deck">%s</p>
 <div class="meta-row"><span class="tag red">%s</span><span class="tag blue">%s</span><span class="tag">%s</span><span class="tag">%s</span><span class="tag">Recall %s</span></div>
 <div class="tools">%s<a class="button button-ghost" href="%s">Follow on IG</a><a class="button button-ghost" href="%s">YouTube</a></div>
-</div>
-<aside class="rail">%s
-%s
-%s
-%s
-%s
-</aside>
-</div>
 <article class="body">
 %s
 <div class="verify"><strong>Verify before you wrench.</strong> This is recall-aware content, not a substitute for a VIN check. Confirm your bike against <a href="%s" target="_blank" rel="noopener">%s &mdash; %s</a>. Last verified %s.</div>
@@ -218,6 +210,14 @@ def page(r, related):
 <div class="cta-actions">%s<a class="button button-ghost" href="%s">Follow on IG</a><a class="button button-ghost" href="%s">YouTube</a></div>
 </div>
 </article>
+</div>
+<aside class="rail">%s
+%s
+%s
+%s
+%s
+</aside>
+</div>
 </main>
 %s
 </body></html>""" % (
@@ -227,9 +227,9 @@ def page(r, related):
         brand, cat, esc(r["page_title"]), desc,
         esc(r["urgency_level"]), esc(r["ridability"]), yr, esc(r["bike_type"]), esc(r["tsb_or_recall_id"]),
         T.msg_button("Message the Mechanic"), IG, YT,
-        video_card(), T.reviews_widget(), T.partner_rail(), T.follow_card(), rel,
         body, src, esc(r["status_source"]), esc(r["tsb_or_recall_id"]), esc(r["last_verified"]),
-        brand, brand, T.msg_button("Message the Mechanic"), IG, YT, footer())
+        brand, brand, T.msg_button("Message the Mechanic"), IG, YT,
+        video_card(), T.reviews_widget(), T.partner_rail(), T.follow_card(), rel, footer())
     return head, rel
 
 def ledger_index(rows):
