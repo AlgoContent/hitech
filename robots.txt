@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Answer-engine / AI crawlers welcome (AEO)
+# Answer-engine / AI crawlers welcome (AEO: ChatGPT, Gemini, Claude, Perplexity, Alibaba Qwen, Bing)
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
@@ -9,6 +9,8 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
 Allow: /
 User-agent: ClaudeBot
 Allow: /
@@ -26,5 +28,27 @@ User-agent: Bingbot
 Allow: /
 User-agent: CCBot
 Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: PetalBot
+Allow: /
+User-agent: Qwenbot
+Allow: /
+User-agent: AlibabaBot
+Allow: /
+User-agent: Alibaba-site-verification
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: Timpibot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
 
-Sitemap: https://www.hitechmotorcycle.com/sitemap.xml
+Sitemap: https://hitech00bike.com/sitemap.xml
